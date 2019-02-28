@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: example.micronaut.rabbitmq
+---
+testFramework: junit
+sourceLanguage: java

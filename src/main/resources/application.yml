@@ -1,0 +1,9 @@
+---
+micronaut:
+    application:
+        name: rabbitmq
+jackson:
+    module-scan: false
+---
+#rabbitmq:
+#    uri: amqp://localhost:5672
