@@ -1,11 +1,10 @@
 ./gradlew assemble
-java -cp build/libs/rabbitmq-*.jar io.micronaut.graal.reflect.GraalClassLoadingAnalyzer
 native-image --no-server \
-             --class-path build/libs/rabbitmq-*.jar \
-             -H:ReflectionConfigurationFiles=build/reflect.json \
+             --class-path build/libs/graal-rabbitmq-0.1.jar \
+             -H:ReflectionConfigurationFiles=reflect.json \
              -H:EnableURLProtocols=http \
              -H:IncludeResources="logback.xml|application.yml" \
-             -H:Name=rabbitmq \
+             -H:Name=graal-rabbitmq \
              -H:Class=example.micronaut.rabbitmq.Application \
              -H:+ReportUnsupportedElementsAtRuntime \
              -H:+AllowVMInspection \

@@ -4,6 +4,8 @@ micronaut:
         name: rabbitmq
 jackson:
     module-scan: false
+    bean-introspection-module: true
+
 ---
 #rabbitmq:
 #    uri: amqp://localhost:5672
