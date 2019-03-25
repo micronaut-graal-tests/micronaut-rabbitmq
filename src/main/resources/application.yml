@@ -3,7 +3,6 @@ micronaut:
     application:
         name: rabbitmq
 jackson:
-    module-scan: false
     bean-introspection-module: true
 
 ---
