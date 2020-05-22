@@ -4,6 +4,4 @@ micronaut:
     name: rabbitmq
 ---
 rabbitmq:
-  uri: amqp://rabbitmqhost:5672
-  # For some reason it is also necessary to define the port when running in Gitlab CI
-  port: 5672
+  uri: amqp://localhost:5672
