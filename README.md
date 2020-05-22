@@ -8,7 +8,7 @@ Test application for Micronaut and GraalVM that uses:
 Start RabbitMQ:
 
 ```
-docker run -it --rm -p 15672:15672 -p 5672:5672 rabbitmq:3.7.11-management
+docker run -it --rm -p 15672:15672 -p 5672:5672 rabbitmq:3.7.26-management
 ```
 
 To test the application:
