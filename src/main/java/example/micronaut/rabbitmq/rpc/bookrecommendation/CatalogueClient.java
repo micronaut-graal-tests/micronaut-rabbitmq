@@ -1,9 +1,9 @@
 package example.micronaut.rabbitmq.rpc.bookrecommendation;
 
 import example.micronaut.rabbitmq.rpc.bookcatalogue.Book;
-import io.micronaut.configuration.rabbitmq.annotation.Binding;
-import io.micronaut.configuration.rabbitmq.annotation.RabbitClient;
-import io.micronaut.configuration.rabbitmq.annotation.RabbitProperty;
+import io.micronaut.rabbitmq.annotation.Binding;
+import io.micronaut.rabbitmq.annotation.RabbitClient;
+import io.micronaut.rabbitmq.annotation.RabbitProperty;
 import io.reactivex.Flowable;
 
 import java.util.List;

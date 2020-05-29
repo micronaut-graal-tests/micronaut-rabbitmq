@@ -1,8 +1,8 @@
 package example.micronaut.rabbitmq.fireandforget.analytics;
 
 import example.micronaut.rabbitmq.fireandforget.books.Book;
-import io.micronaut.configuration.rabbitmq.annotation.Queue;
-import io.micronaut.configuration.rabbitmq.annotation.RabbitListener;
+import io.micronaut.rabbitmq.annotation.Queue;
+import io.micronaut.rabbitmq.annotation.RabbitListener;
 
 @RabbitListener
 public class AnalyticsListener {
