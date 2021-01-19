@@ -1,4 +1,4 @@
-package example.micronaut.rabbitmq.rpc.bookinventory;
+package example.micronaut.rpc.bookinventory;
 
 import java.util.Objects;
 

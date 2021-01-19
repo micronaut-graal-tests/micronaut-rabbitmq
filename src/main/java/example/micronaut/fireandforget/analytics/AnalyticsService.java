@@ -1,6 +1,6 @@
-package example.micronaut.rabbitmq.fireandforget.analytics;
+package example.micronaut.fireandforget.analytics;
 
-import example.micronaut.rabbitmq.fireandforget.books.Book;
+import example.micronaut.fireandforget.books.Book;
 
 import javax.inject.Singleton;
 import java.util.List;

@@ -1,4 +1,4 @@
-package example.micronaut.rabbitmq.rpc.bookcatalogue;
+package example.micronaut.rpc.bookcatalogue;
 
 import io.micronaut.rabbitmq.annotation.Queue;
 import io.micronaut.rabbitmq.annotation.RabbitListener;

@@ -1,4 +1,4 @@
-package example.micronaut.rabbitmq;
+package example.micronaut;
 
 import io.micronaut.runtime.Micronaut;
 

@@ -1,4 +1,4 @@
-package example.micronaut.rabbitmq.rpc.bookrecommendation;
+package example.micronaut.rpc.bookrecommendation;
 
 import io.micronaut.core.annotation.Introspected;
 

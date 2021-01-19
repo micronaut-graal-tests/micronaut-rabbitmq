@@ -1,4 +1,4 @@
-package example.micronaut.rabbitmq;
+package example.micronaut;
 
 import com.rabbitmq.client.BuiltinExchangeType;
 import com.rabbitmq.client.Channel;

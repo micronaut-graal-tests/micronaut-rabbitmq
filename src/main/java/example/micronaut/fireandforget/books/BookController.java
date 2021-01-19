@@ -1,4 +1,4 @@
-package example.micronaut.rabbitmq.fireandforget.books;
+package example.micronaut.fireandforget.books;
 
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;

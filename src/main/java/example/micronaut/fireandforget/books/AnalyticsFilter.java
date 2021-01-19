@@ -1,4 +1,4 @@
-package example.micronaut.rabbitmq.fireandforget.books;
+package example.micronaut.fireandforget.books;
 
 import io.micronaut.http.HttpRequest;
 import io.micronaut.http.MutableHttpResponse;

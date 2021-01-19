@@ -1,4 +1,4 @@
-package example.micronaut.rabbitmq.fireandforget.books;
+package example.micronaut.fireandforget.books;
 
 import io.micronaut.rabbitmq.annotation.RabbitClient;
 import io.micronaut.rabbitmq.annotation.Binding;

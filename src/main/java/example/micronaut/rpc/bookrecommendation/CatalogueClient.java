@@ -1,6 +1,6 @@
-package example.micronaut.rabbitmq.rpc.bookrecommendation;
+package example.micronaut.rpc.bookrecommendation;
 
-import example.micronaut.rabbitmq.rpc.bookcatalogue.Book;
+import example.micronaut.rpc.bookcatalogue.Book;
 import io.micronaut.rabbitmq.annotation.Binding;
 import io.micronaut.rabbitmq.annotation.RabbitClient;
 import io.micronaut.rabbitmq.annotation.RabbitProperty;

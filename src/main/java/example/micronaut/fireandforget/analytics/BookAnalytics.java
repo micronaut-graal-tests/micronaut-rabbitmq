@@ -1,4 +1,4 @@
-package example.micronaut.rabbitmq.fireandforget.analytics;
+package example.micronaut.fireandforget.analytics;
 
 import io.micronaut.core.annotation.Introspected;
 
