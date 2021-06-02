@@ -1,8 +1,8 @@
 package example.micronaut.fireandforget.analytics;
 
 import example.micronaut.fireandforget.books.Book;
+import jakarta.inject.Singleton;
 
-import javax.inject.Singleton;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
