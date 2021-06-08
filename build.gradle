@@ -7,9 +7,22 @@ version = "0.1"
 group = "example.micronaut"
 
 repositories {
+    mavenLocal()
     mavenCentral()
     jcenter()
     maven { url "https://s01.oss.sonatype.org/content/repositories/snapshots/" }
+}
+
+configurations {
+    all {
+        resolutionStrategy {
+            eachDependency { DependencyResolveDetails details ->
+                if (details.requested.group == 'io.micronaut.rabbitmq') {
+                    details.useVersion '2.5.1-SNAPSHOT'
+                }
+            }
+        }
+    }
 }
 
 micronaut {
