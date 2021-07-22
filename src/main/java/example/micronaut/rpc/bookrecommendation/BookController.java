@@ -1,8 +1,10 @@
 package example.micronaut.rpc.bookrecommendation;
 
+import io.micronaut.core.async.annotation.SingleResult;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
-import io.reactivex.Flowable;
+import org.reactivestreams.Publisher;
+import reactor.core.publisher.Flux;
 
 @Controller("/books-rpc")
 public class BookController {
@@ -16,10 +18,11 @@ public class BookController {
     }
 
     @Get("/") // <3>
-    public Flowable<BookRecommendation> index() {
+    @SingleResult
+    public Publisher<BookRecommendation> index() {
         return catalogueClient.findAll(null)
-                .flatMap(Flowable::fromIterable)
-                .flatMapMaybe(book -> inventoryClient.stock(book.getIsbn())
+                .flatMap(Flux::fromIterable)
+                .flatMap(book -> inventoryClient.stock(book.getIsbn())
                         .filter(Boolean::booleanValue)
                         .map(response -> book))
                 .map(book -> new BookRecommendation(book.getName()));

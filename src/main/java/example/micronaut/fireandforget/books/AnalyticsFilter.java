@@ -5,8 +5,9 @@ import io.micronaut.http.MutableHttpResponse;
 import io.micronaut.http.annotation.Filter;
 import io.micronaut.http.filter.HttpServerFilter;
 import io.micronaut.http.filter.ServerFilterChain;
-import io.reactivex.Flowable;
 import org.reactivestreams.Publisher;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 import java.util.Optional;
 
@@ -21,10 +22,10 @@ public class AnalyticsFilter implements HttpServerFilter {
 
     @Override
     public Publisher<MutableHttpResponse<?>> doFilter(HttpRequest<?> request, ServerFilterChain chain) {
-        return Flowable
-                .fromPublisher(chain.proceed(request))
+        return Flux
+                .from(chain.proceed(request))
                 .flatMap(response ->
-                        Flowable.fromCallable(() -> {
+                        Mono.fromCallable(() -> {
                             Optional<Book> book = response.getBody(Book.class);
                             book.ifPresent(analyticsClient::updateAnalytics);
 
