@@ -2,6 +2,11 @@
 micronaut:
   application:
     name: rabbitmq
+endpoints:
+  all:
+    sensitive: false
+  loggers:
+    enabled: true
 ---
 rabbitmq:
   uri: amqp://localhost:5672

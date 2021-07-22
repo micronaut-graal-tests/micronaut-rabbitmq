@@ -26,6 +26,8 @@ dependencies {
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut.rabbitmq:micronaut-rabbitmq")
     implementation("io.micronaut.reactor:micronaut-reactor")
+    implementation("io.micronaut:micronaut-management")
+    implementation("io.micronaut.micrometer:micronaut-micrometer-core")
 
     runtimeOnly("ch.qos.logback:logback-classic")
 }
