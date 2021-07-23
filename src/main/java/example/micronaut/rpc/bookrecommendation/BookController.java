@@ -1,6 +1,5 @@
 package example.micronaut.rpc.bookrecommendation;
 
-import io.micronaut.core.async.annotation.SingleResult;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 import org.reactivestreams.Publisher;
@@ -18,7 +17,6 @@ public class BookController {
     }
 
     @Get("/") // <3>
-    @SingleResult
     public Publisher<BookRecommendation> index() {
         return catalogueClient.findAll(null)
                 .flatMap(Flux::fromIterable)
