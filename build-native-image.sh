@@ -1,4 +1,4 @@
 #!/bin/bash
 
-./gradlew nativeImage
-cp build/native-image/rabbitmq .
+./gradlew nativeCompile
+cp build/native/nativeCompile/rabbitmq .
